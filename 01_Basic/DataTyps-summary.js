@@ -29,4 +29,44 @@ let myObj = {
 const myFunction = function(){
     console.log("hello world");
 }
-console.log(typeof outsideTemp)
+console.log(typeof outsideTemp);
+
+
+
+//--------------------------------------------------
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myname = "pavan"
+let anothername = myname
+anothername = "jivn"
+
+console.log(myname)
+console.log(anothername)
+
+let userOne ={
+    email:"email@google.com",
+    upi:"user@ybl"
+}
+let userTwo = userOne
+
+userTwo.email = "pavan@google.com"
+console.log(userOne.email)
+console.log(userTwo.email)
+
+/*
+
+🔹 What is Stack?
+
+-Stack is a small and fast memory.
+-It stores primitive data types.
+-Memory is managed in LIFO (Last In, First Out) order.
+👉 Stack stores actual value, not reference.
+
+🔹 What is Heap?
+
+-Heap is large but slower memory.
+-It stores non-primitive (reference) types.
+-Variables store reference (address), not the actual value.
+👉 Heap stores reference, not copy.
+*/
