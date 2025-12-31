@@ -29,4 +29,3 @@ console.log(url.replace("www", "pavan")); //https://pavan.google.com
 console.log(url.includes("pavan")) // false
 
 console.log(strName.codePointAt(1))  // a => 97 char to deci
-
