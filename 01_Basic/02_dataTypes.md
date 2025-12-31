@@ -56,7 +56,7 @@ let price = 99.99;
 let temperature = -10;
 
 
-🔹 2. String 🔤
+### 🔹 2. String 🔤
 
 Used to represent textual data.
 
@@ -68,7 +68,7 @@ let message = `Hello ${firstName}`;
 ✔ Supports single, double & backticks
 ✔ Strings are immutable
 
-🔹 3. Boolean 🔘
+###🔹 3. Boolean 🔘
 
 Represents logical values.
 
@@ -78,7 +78,7 @@ let hasPermission = false;
 
 ✔ Mostly used in conditions & loops
 
-🔹 4. Undefined ❓
+###🔹 4. Undefined ❓
 
 A variable that is declared but not assigned a value.
 
@@ -88,7 +88,7 @@ console.log(result); // undefined
 
 ✔ Automatically assigned by JavaScript
 
-🔹 5. Null 🚫
+###🔹 5. Null 🚫
 
 Represents an intentional absence of value.
 
@@ -98,7 +98,7 @@ let salary = null;
 ✔ Assigned manually
 ⚠ typeof null returns "object" (JavaScript bug)
 
-🔹 6. BigInt 🔢
+###🔹 6. BigInt 🔢
 
 Used to store very large integers beyond Number limits.
 
@@ -108,7 +108,7 @@ let bigNumber = 123456789012345678901234567890n;
 ✔ Ends with n
 ✔ Cannot be mixed directly with Number
 
-🔹 7. Symbol 🆔
+###🔹 7. Symbol 🆔
 
 Used to create unique identifiers.
 
@@ -121,11 +121,11 @@ console.log(id1 === id2); // false
 ✔ Always unique
 ✔ Used in advanced objects & libraries
 
-4️⃣ Non-Primitive (Reference) Data Types
+## 4️⃣ Non-Primitive (Reference) Data Types
 
 Reference types store multiple values and are compared by reference.
 
-🔹 1. Object 📦
+###🔹 1. Object 📦
 
 Stores data in key-value pairs.
 
@@ -138,7 +138,7 @@ let user = {
 
 ✔ Access using dot (.) or bracket ([]) notation
 
-🔹 2. Array 📚
+###🔹 2. Array 📚
 
 Used to store multiple values in a single variable.
 
@@ -148,7 +148,7 @@ let numbers = [10, 20, 30, 40];
 ✔ Zero-based index
 ✔ Dynamic size
 
-🔹 3. Function 🧠
+###🔹 3. Function 🧠
 
 Functions are treated as objects in JavaScript.
 
@@ -160,7 +160,7 @@ function greet() {
 ✔ Can be assigned to variables
 ✔ Can be passed as arguments
 
-🔹 4. Date 📅
+###🔹 4. Date 📅
 
 Used to work with date and time.
 
@@ -169,7 +169,7 @@ let today = new Date();
 
 ✔ Built-in JavaScript object
 
-🔹 5. Map 🗺️
+###🔹 5. Map 🗺️
 
 Stores key-value pairs with unique keys.
 
@@ -179,7 +179,7 @@ map.set("name", "Pavan");
 
 ✔ Better performance than objects in many cases
 
-🔹 6. Set 🔁
+###🔹 6. Set 🔁
 
 Stores unique values only.
 
@@ -188,7 +188,7 @@ let set = new Set([1, 2, 3, 3]);
 
 ✔ Automatically removes duplicates
 
-5️⃣ typeof Operator 🔍
+###5️⃣ typeof Operator 🔍
 
 Used to check the data type of a variable.
 
@@ -204,7 +204,7 @@ typeof function(){}  // "function"
 
 ⚠ typeof null === "object" is a known JavaScript bug
 
-6️⃣ Primitive vs Reference (Very Important ⭐)
+###6️⃣ Primitive vs Reference (Very Important ⭐)
 🔹 Primitive (By Value)
 let a = 10;
 let b = a;
@@ -213,7 +213,7 @@ b = 20;
 
 ✔ a remains unchanged
 
-🔹 Reference (By Reference)
+###🔹 Reference (By Reference)
 let obj1 = { name: "Pavan" };
 let obj2 = obj1;
 obj2.name = "Rahul";
