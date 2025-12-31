@@ -218,7 +218,6 @@ let obj1 = { name: "Pavan" };
 let obj2 = obj1;
 obj2.name = "Rahul";
 
-
 ❌ obj1 is also modified
 
 🧠 Quick Revision Summary
