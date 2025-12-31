@@ -15,7 +15,8 @@ let myTimeStamp = Date.now()
 // console.log(myTimeStamp) //milisecond
 // console.log(myCreatedDates.getTime()) 
 // console.log(Math.floor(Date.now()/1000))
-
+let mydate = new Date()
+console.log(mydate.toUTCString())
 
 /**
 let now = new Date();
