@@ -227,7 +227,7 @@ obj2.name = "Rahul";
 ✔ Reference → Stored by reference
 ✔ null is intentional, undefined is automatic
 ✔ Arrays & objects are not primitive
-✔ typeof null is "object"
+✔ typeof null is "object" 
 
 🚀 Final Note
 
