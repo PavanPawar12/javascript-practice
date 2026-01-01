@@ -115,20 +115,27 @@ function sum(a, b, cb){
 // sum(3,6,showResult)
 // sum(10,10, (val) => console.log(val));
 let resultFunction  = sum(10,30, () => {});
-resultFunction()
+// resultFunction()
 
 function getSum(a, b, cb){
     let result = a + b;
-    console.log(cb(result));
+    // console.log(cb(result));
 }
 getSum(1, 3, function (val){
-    console.log(val)
+    // console.log(val)
 })
 
 
-function SubStract(){
-    return a + b;
-}
-let re = SubStract(2);
-console.log(re)
+// object 
 
+let person = {
+    name:"Pavan",
+    age:23,
+    isStudent:true,
+    greet: function(){
+        return "Hello, my name is : " + this.name 
+    }
+}
+console.log(person)
+console.log(person.name)
+console.log(person.greet())
