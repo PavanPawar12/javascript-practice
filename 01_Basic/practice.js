@@ -116,3 +116,19 @@ function sum(a, b, cb){
 // sum(10,10, (val) => console.log(val));
 let resultFunction  = sum(10,30, () => {});
 resultFunction()
+
+function getSum(a, b, cb){
+    let result = a + b;
+    console.log(cb(result));
+}
+getSum(1, 3, function (val){
+    console.log(val)
+})
+
+
+function SubStract(){
+    return a + b;
+}
+let re = SubStract(2);
+console.log(re)
+
