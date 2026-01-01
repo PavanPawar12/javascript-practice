@@ -18,12 +18,13 @@ const jsUser  = {
     location:'kolhapur',
     email:"pavan@gmail.com",
     isLogginIn:false,
-    lastLoginday:['monday','saturday']
+    lastLoginday:['Monday','Saturday']
 }
 
-console.log(jsUser["location"])
-console.log(jsUser["full name"])
-console.log( jsUser[mySym])
+// console.log(jsUser["location"])
+// console.log(jsUser["full name"])
+// console.log( jsUser[mySym])
+// console.log(jsUser)
 
 jsUser.email = "jivan@gmail.com"
 // Object.freeze(jsUser)
@@ -33,14 +34,9 @@ console.log(jsUser)
 jsUser.greeting = function(){
     console.log("Hello js!")
 }
-console.log(jsUser.greeting());
-
-const student = {
-    name:"pavan",
-    age:20,
-    isStudent:true,
-    email:'pava@gmai.com',
-    isLogin:true,
-    lastLoginday:['monday','saturday'],
+jsUser.greetingTwo = function(){
+    console.log(`Hello  ${this.name}`)
 }
-// console.log(student['email'])
+console.log(jsUser.greeting());
+console.log(jsUser.greetingTwo());
+
