@@ -3,7 +3,7 @@ const name2 = ['pranav','antrix']
 
 // const bothname = name1.push(name2)
 // console.log(bothname)
-
+// using spread
 const all_name = [...name1, ...name2]
 console.log(all_name)
 
