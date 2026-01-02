@@ -21,6 +21,7 @@ const jsUser  = {
     lastLoginday:['Monday','Saturday']
 }
 
+
 // console.log(jsUser["location"])
 // console.log(jsUser["full name"])
 // console.log( jsUser[mySym])

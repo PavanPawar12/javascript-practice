@@ -54,7 +54,27 @@ let myuser = myUser.find(user => user.email == "pavan@gmai.com");
 // console.log(myuser)
 
 let emails = myUser.map(user => user.email);
-console.log(emails)
+console.log(emails) 
 
 let result = myUser.map(user => user.id)
 console.log(result)
+
+
+//------------destrucring
+const cource = {
+    coursename:"complete data",
+    price:"4000",
+    student:"pavan"
+}
+
+// cource.student
+const {student: s} = cource
+console.log(s)
+
+// {
+//     "name":"pavan",
+//     "coursename":"js free ",
+//     "price":"free"
+// }
+
+
