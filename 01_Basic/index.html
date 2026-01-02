@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <script src="/01_Basic/practice.js"></script>
-</body>
+  </head>
+  <body>
+    <p >hellow this is pavan</p>
+    <ul style="background-color: aqua;  " id="userList"></ul>
+    <!-- <script src="/01_Basic/practice.js"></script> -->
+    <script>
+      /*
+      const myuser = [
+        { id: 1, email: "pavan@gmail.com" },
+        { id: 2, email: "newuser@gmail.com" },
+        { id: 3, email: "test@gmail.com" },
+      ];
+
+     const container  = document.getElementById("userList");
+      myuser.forEach(user => {
+      container.innerHTML += `<p>ID: ${user.id}, Email: ${user.email}</p>`;
+    });
+    */
+
+    const myUser = [
+        { id: 1, email: "pavan@gmail.com" },
+        { id: 2, email: "newuser@gmail.com" },
+        { id: 3, email: "test@gmail.com" },
+    ]
+    //let container = document.getElementById('userList');
+    //myUser.forEach(user =>{
+      //const li = document.createElement("li");
+      //li.textContent = `ID: ${user.id}, Email: ${user.email}`;
+      //userList.appendChild(li);    })
+
+      let container = document.getElementById("userList");
+      myUser.forEach(user => {
+        const li = document.createElement('li');
+        li.textContent = `ID:${user.id}, Email: ${user.email}`
+        userList.appendChild(li)
+      })
+    </script>
+  </body>
 </html>
