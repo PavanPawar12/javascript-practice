@@ -63,3 +63,5 @@ console.log(fruitsCopy)
 
 const fruitsCopy1 = Array.from(fruits)
 console.log(fruitsCopy1)
+
+
