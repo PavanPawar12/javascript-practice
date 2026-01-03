@@ -16,7 +16,6 @@ const sum = arr.reduce(function(num, acc){
 },0)
 
 
-
 console.log(newArr)
 console.log(arr)
 console.log(sum)
