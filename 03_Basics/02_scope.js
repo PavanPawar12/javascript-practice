@@ -13,3 +13,26 @@ if(true){
 // console.log(a)
 // console.log(b)
 console.log(a)
+
+function one(){
+    const username = "pavan"
+    
+    function two(){
+        const website = "pavan.com"
+        console.log(website)
+    }
+    // console.log(website)
+    two()
+}
+one()
+
+if(true){
+    const username = "rahul"
+    if(username == "rahul"){
+        const website = "youtube"
+        console.log(username + website);
+        console.log(website)
+    }
+    console.log(username)
+}
+// console.log(username)
