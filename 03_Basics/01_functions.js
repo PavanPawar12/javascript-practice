@@ -52,3 +52,15 @@ function getSecondValue(getValue){
 }
 // console.log(getSecondValue(myArr))
 console.log(getSecondValue([1,1,1,1,1,1,2]))
+
+
+console.log(addSum(23))
+function addSum(num){
+    return num;
+
+}
+
+console.log(addTwo(245))
+const addTwo = function(num){   // concept of hoisting
+    return num + 2;
+}
