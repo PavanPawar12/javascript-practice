@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Todo list</h1>
+    <input type="text" id="username" placeholder="enter name..." />
+    <button id="addBtn">Add user</button>
+    <ul id="userList"></ul>
+
+    <script>
+        /*
+      const input = document.getElementById("username");
+      const addBtn = document.getElementById("addBtn");
+      const userList = document.getElementById("userList");
+
+      // array to store user
+      let users = [];
+
+      addBtn.addEventListener("click", function () {
+        const name = input.values;
+        if (name === "") {
+          alert("Please enter your name");
+          return;
+        }
+
+        users.push(name);
+        console.log(users.values = "");
+        //users.values = "";
+        //console.log(renderUsers());
+        renderUsers();
+      });
+
+      function renderUsers() {
+        userList.innerHTML = ""; // clear the old list
+
+        users.forEach(function (user, index) {
+          const li = document.createElement("li");
+          li.innerText = user;
+          li.style.color = "blue";
+          li.style.fontSize = "18px";
+
+          // delete button
+          const deleteBtn = document.createElement("button");
+          deleteBtn.innerText = "❌";
+          deleteBtn.style.marginLeft = "10px";
+          
+
+          deleteBtn.addEventListener("click", function () {
+            users.splice(index, 1);
+            renderUsers();
+          });
+
+          li.appendChild(deleteBtn);
+          userList.appendChild(li);
+        });
+      }
+        */
+const input = document.getElementById("username");
+const addBtn = document.getElementById("addBtn");
+const userList = document.getElementById("userList");
+
+// array to store users
+let users = [];
+
+// add user
+addBtn.addEventListener("click", function () {
+
+    const name = input.value;
+
+    if (name === "") {
+        alert("Please enter a name");
+        return;
+    }
+
+    users.push(name);
+    input.value = "";
+
+    renderUsers();
+});
+
+// render users on UI
+function renderUsers() {
+    userList.innerHTML = ""; // clear old list
+
+    users.forEach(function (user, index) {
+
+        const li = document.createElement("li");
+        li.innerText = user;
+        li.style.color = "blue";
+        li.style.fontSize = "18px";
+
+        // delete button
+        const deleteBtn = document.createElement("button");
+        deleteBtn.innerText = "❌";
+        deleteBtn.style.marginLeft = "10px";
+
+        deleteBtn.addEventListener("click", function () {
+            users.splice(index, 1);
+            renderUsers();
+        });
+
+        li.appendChild(deleteBtn);
+        userList.appendChild(li);
+    });
+}
+
+
+    </script>
+  </body>
+</html>
