@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="heading">Hellow Pavan</h1>
+    <button onclick="msgChange()">Click</button>
+    <input type="text" />
+    <ul id="userList"></ul>
+    <script>
+      const heading = document.createElement("h3");
+      const headingText = document.createTextNode("This is heading");
+
+      heading.appendChild(headingText);
+      document.body.appendChild(heading);
+      function msgChange() {
+        document.getElementById("heading").innerText = "Welcome to Dubai PAvan";
+        document.getElementById("heading").style.color = "red";
+        document.getElementById("heading").style.backgroundColor = "green";
+      }
+
+      const items = ["HTML", "CSS", "JS"];
+      items.forEach(function (item) {
+        const li = document.createElement("li");
+        li.innerText = item;
+        document.body.appendChild(li);
+      });
+
+      const object = [
+        {
+          id: 1,
+          name: "pavan",
+        },
+        {
+          id: 2,
+          name: "jivan",
+        },
+        {
+          id: 3,
+          name: "tejas",
+        },
+      ];
+
+      object.forEach(function (ob) {
+        console.log(ob);
+        const li = document.createElement("li");
+        li.innerText = `ID: ${ob.id} , Name:${ob.name}`;
+        if (ob.name != "pavan") {
+          console.log(`${ob.name}`);
+        }
+        document.body.appendChild(li);
+      });
+
+      const users = [
+        { id: 1, name: "Pavan" },
+        { id: 2, name: "Rahul" },
+        { id: 3, name: "Amit" },
+      ];
+
+
+      const ul = document.getElementById("userList");
+      users.forEach(function(user){
+        const li = document.createElement("li");
+        li.innerText = `ID: ${user.id} | Name: ${user.name}`
+        li.style.color = "blue";
+        li.style.fontSize = "20px";
+        ul.appendChild(li)
+
+        //console.log(user); for debugging
+
+
+      })
+    </script>
+  </body>
+</html>
